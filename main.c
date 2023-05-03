@@ -6,8 +6,11 @@ int stringLength(char *);
 
 int main() {
 
-    char texto[]="gold dust woman";
+    char texto[1000];
     int resultado;
+    printf("Ingresar texto: ");
+    fflush(stdin);
+    gets(texto);
     resultado= stringLength(texto);
     printf("'%s' tiene %d caracteres",texto,resultado);
     return 0;
